@@ -289,8 +289,23 @@ div {
             border-bottom: 1px solid #eee;
             overflow: hidden;
         }
+        // 设置二级标题和三级标题样式
+        h2::before{
+            display: inline-block;
+            content: '#';
+            color: rgb(150, 164, 138);
+            margin: 10px;
+            margin-left: 2px;
+        }
         h3 {
             margin: 1.4em 0 1.1em;
+        }
+        h3::before{
+            display: inline-block;
+            content: '##';
+            color: rgb(150, 164, 138);  
+            margin: 10px;
+            margin-left: 5px;
         }
         pre code {
             padding: 0 2em;
