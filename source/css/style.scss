@@ -61,7 +61,7 @@ a:active {
 }
 
 a:focus {
-    outline: auto;
+    // outline: auto;
 }
 
 .clear {
@@ -528,15 +528,17 @@ blockquote,
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 2.5em 0;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 18px;
     color: #555;
-    border-left: none;
+    // border-left: none;
+    border-left: .15em solid rgb(207, 69, 92);
 }
+
 
 blockquote::before,
 .stressed-quote::before {
-    content: "\201C";
-    display: block;
+    // content: "\201C";
+    // display: block;  
     font-family: times;
     font-style: normal;
     font-size: 48px;
