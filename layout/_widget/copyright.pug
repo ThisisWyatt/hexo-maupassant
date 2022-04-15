@@ -4,15 +4,15 @@
   //- p
   //-   span= __('copyright_title_prefix')
   //-   = page.title
-  p
-    span= __('copyright_author_prefix')
-    = theme.post_copyright.author
+  //- p
+  //-   span= __('copyright_author_prefix')
+  //-   = theme.post_copyright.author
   p
     span= __('copyright_date_prefix')
     = date(page.date, "YYYY-MM-DD  H:mm:ss")
-  //- p
-  //-   span= __('copyright_update_prefix')
-  //-   = date(page.updated, "YYYY-MM-DD  H:mm:ss")
+  p
+    span= __('copyright_update_prefix')
+    = date(page.updated, "YYYY-MM-DD  H:mm:ss")
   p
     span= __('copyright_link_prefix')
     a(href='/' + page.path)= page.permalink
