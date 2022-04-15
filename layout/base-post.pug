@@ -26,7 +26,7 @@ html(lang=config.language)
     gtag('js', new Date());
 
     gtag('config', '#{theme.google_analytics}');
-  
+
   body: .body_container
     #header
       .site-name
@@ -40,17 +40,28 @@ html(lang=config.language)
     #layout.pure-g
       .pure-u-1.pure-u-md-3-4: .content_container
         block content
-      if theme.widgets_on_small_screens
+      if page.toc != true
         .pure-u-1.pure-u-md-1-4: #sidebar
           each item in theme.widgets
             != partial('_widget/' + item + '.pug', null, {cache: !config.relative_link})
       else
-        .pure-u-1-4.hidden_mid_and_down: #sidebar
-          each item in theme.widgets
-            != partial('_widget/' + item + '.pug', null, {cache: !config.relative_link})
+        if theme.toc_on_small_screens
+          .pure-u-1.pure-u-md-1-4: #sidebar-toc
+            div(id="sidebar-stoc" class="stoc-article")
+              strong(class="stoc-title")
+                i(class='fa fa-blind')= ' Contents '
+              div(id="stoc" class='toc-nav')
+                != toc(page.content, {list_number: page.tocnumber})
+        else 
+          .pure-u-1-4.hidden_mid_and_down: #sidebar-toc
+            div(id="sidebar-stoc" class="stoc-article")
+              strong(class="stoc-title")
+                i(class='fa fa-blind')= ' Contents '
+              div(id="stoc" class='toc-nav')
+                != toc(page.content, {list_number: page.tocnumber})
       .pure-u-1.pure-u-md-3-4
         != partial('_partial/footer.pug')
 
     include _partial/totop.pug
     include _partial/after_footer.pug
-    
+    include _partial/toc.pug
