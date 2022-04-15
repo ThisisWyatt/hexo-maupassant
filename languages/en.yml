@@ -24,11 +24,11 @@ Discuss: Discuss
 Comment: Comment
 Hits: Hits
 copyright_title_prefix: "Title: "
-copyright_date_prefix: "Date: "
-copyright_update_prefix: "Last Update: "
-copyright_author_prefix: "Author: "
-copyright_link_prefix: "Blog Link: "
-copyright_declare_prefix: "Copyright Declaration: "
+copyright_date_prefix: "发布时间: "
+copyright_update_prefix: "更新时间: "
+copyright_author_prefix: "本文作者: "
+copyright_link_prefix: "本文链接: "
+copyright_declare_prefix: "版权声明: "
 copyright_default_text: "The author owns the copyright. Please indicate the source reproduced!"
 word_cnt: Words
 read_time: Minutes
