@@ -285,28 +285,40 @@ div {
         text-justify: distribute;
         word-break: normal;
         h2 {
-            margin: 1.4em 0 1.1em;
-            border-bottom: 1px solid #eee;
-            overflow: hidden;
+            // margin: 1.4em 0 1.1em;
+            // border-bottom: 1px solid #eee;
+            font-size: 1.4em;
+            margin: 40px 10px 20px 0;
+            padding-left: 9px;
+            border-left: 6px solid #ffc107;
+            font-weight: 700;
+            line-height: 1.4; 
         }
         // 设置二级标题和三级标题样式
-        h2::before{
-            display: inline-block;
-            content: '#';
-            color: rgb(150, 164, 138);
-            margin: 10px;
-            margin-left: 2px;
-        }
+        // h2::before{
+        //     display: inline-block;
+        //     content: '#';
+        //     color: #ffc107;
+        //     margin: 10px;
+        //     margin-left: 2px;
+        // }
         h3 {
-            margin: 1.4em 0 1.1em;
+            // margin: 1.4em 0 1.1em;
+
+            font-size: 1.4em;
+            margin: 40px 10px 20px 0;
+            padding-left: 9px;
+            border-left: 3px solid #ffc107;
+            font-weight: 700;
+            line-height: 1.4; 
         }
-        h3::before{
-            display: inline-block;
-            content: '##';
-            color: rgb(150, 164, 138);  
-            margin: 10px;
-            margin-left: 5px;
-        }
+        // h3::before{
+        //     display: inline-block;
+        //     content: '##';
+        //     color: rgb(150, 164, 138);  
+        //     margin: 10px;
+        //     margin-left: 5px;
+        // }
         pre code {
             padding: 0 2em;
         }
@@ -538,16 +550,25 @@ screen and (max-width: 35.5em) {
     }
 }
 
+/** markdown引用样式 */
 blockquote,
 .stressed {
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 2.5em 0;
-    padding: 0 0 0 18px;
+      box-sizing: border-box;
+      margin: 1.5em 0;
+      padding: 0 0 0 18px;
+      border-radius: 3px;
+      border-left: 0.20em solid #7b8b6f;
+      background: #fdfdfd;
+      color: #555; 
     color: #555;
-    // border-left: none;
-    border-left: .15em solid rgb(207, 69, 92);
+      color: #555; 
+    color: #555;
+      color: #555; 
+    color: #555;
+      color: #555; 
 }
+
 
 
 blockquote::before,
