@@ -294,3 +294,13 @@ Thanks for all contributors of this repo.
 + Octopress：https://github.com/pagecho/mewpassant/
 + Farbox：https://github.com/pagecho/Maupassant-farbox/
 + Hugo: https://github.com/rujews/maupassant-hugo/
+
+
+
+
+
+
+npm install hexo-renderer-pug --save
+npm install hexo-renderer-sass --save
+npm install hexo-abbrlink --save
+npm install --save hexo-generator-search

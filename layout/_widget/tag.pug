@@ -1,8 +1,7 @@
 .widget
   .widget-title
-    h5 
-      a( href="/tags" ) FEATURED TAGS
-  .tags
+    i.fa.fa-tags= '  ' + __('标签')
+  .tagcloud
+    //- != tagcloud({min_font: 13, max_font: 15, amount: 30 orderL: count})
     for tag in site.tags.toArray()
-      if tag.length > theme.featuredsize
-        a( href=config.root + tag.path title=tag.name rel= tag.length ) #{tag.name}
+      a(href='/tags/#' + tag.name, title=tag.name, rel= tag.length) #{tag.name}
