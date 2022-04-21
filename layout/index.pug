@@ -13,7 +13,7 @@ block content
         include _partial/helpers.pug
         a(href=url_for(post.path))
           +title(post)
-      .post-meta= post.date.format('MMMM d, yyyy')
+      .post-meta= post.date.format('MMMM yyyy')
       if theme.disqus.enable == true
         a.disqus-comment-count(data-disqus-identifier=post.path, href=url_for(post.path) + '#disqus_thread')
       if theme.changyan
