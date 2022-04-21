@@ -137,6 +137,7 @@ timeline:
 # Static files
 js: js
 css: css
+font: font
 
 # Theme version
-version: 1.0.0
+version: 1.0.1
