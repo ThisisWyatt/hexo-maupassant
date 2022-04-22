@@ -306,3 +306,4 @@ npm install hexo-abbrlink --save
 npm install --save hexo-generator-search
 npm install hexo-deployer-git --save
 npm i --save hexo-wordcount
+npm install hexo-generator-feed --save

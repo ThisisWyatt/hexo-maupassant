@@ -109,7 +109,7 @@ menu:
   #   icon: fa-tag
   # - page: rss
   #   directory: atom.xml
-  #   icon: fa-rss
+  #   icon: fa-location-arrow
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, recent_comments and links.
   - search
