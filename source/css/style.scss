@@ -2947,11 +2947,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 14px;
-    ::marker{
-      margin-right: auto;
-      font-weight: bold;
-      content: "- ";
-    }
 }
 
 .body_container {
@@ -3299,6 +3294,10 @@ b, strong {
             font-weight: 700;
             line-height: 1.4; 
         }
+
+        
+
+        
         // 设置二级标题和三级标题样式
         // h2::before{
         //     display: inline-block;
@@ -3326,6 +3325,12 @@ b, strong {
         // }
         pre code {
             padding: 0 2em;
+        }
+
+        ::marker{
+          margin-right: auto;
+          font-weight: bold;
+          content: "- ";
         }
         p {
             margin: 0 0 1.234em;
@@ -3395,7 +3400,7 @@ b, strong {
                 font-family: "JetBrains Mono","glyph-correction","Source Code Pro","Noto Serif SC",monospace, Menlo, Consolas, monospace !important;
                 font-weight: 400;
                 letter-spacing: 1.25px;
-                font-size: 15px;
+                font-size: 14px;
                 color: #0085a1;
             }
             a {
