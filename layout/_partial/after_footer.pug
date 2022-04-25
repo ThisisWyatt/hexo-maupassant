@@ -48,6 +48,7 @@ if page.mathjax2
 script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
 script(type='text/javascript', src=url_for(theme.js) + '/smartresize.js' + '?v=' + theme.version)
 
+//- google-code-prettify
 script(type='text/javascript' src=url_for(theme.js) + '/prettify.js' + '?v=' + theme.version)
 script.
   $(document).ready(function(){
@@ -55,11 +56,3 @@ script.
   //- $('code').addClass('prettyprint');
   prettyPrint();
   })
-//- <script src=url_for(theme.js) + "/prettify.js"></script>
-//- <script type="text/javascript">
-//- $(document).ready(function(){
-//-   $('pre').addClass('prettyprint linenums');
-//-   $('code').addClass('prettyprint');
-//-   prettyPrint();
-//-   })
-//- </script>
