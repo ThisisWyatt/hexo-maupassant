@@ -1,6 +1,6 @@
 .widget
   .widget-title
-    i.fa.fa-tags= '  ' + __('标签')
+    a#tagTitle(href=url_for('/tags')) 标签
   .tagcloud
     //- != tagcloud({min_font: 13, max_font: 15, amount: 30 orderL: count})
     for tag in site.tags.toArray()
