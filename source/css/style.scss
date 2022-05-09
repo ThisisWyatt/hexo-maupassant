@@ -4129,8 +4129,22 @@ figure.highlight,
         width: 100%;
     }
     // Reset for tag `pre` and  for class `.gutter`, `.code`, `.tag`
+
+    .gutter{
+        background-color: inherit;
+        font-size: 15px;
+        font-family: "JetBrains Mono","Source Code Pro","Noto Serif SC",monospace;
+        border: none;
+        padding: 0;
+        margin: 0;
+        // To override cursor attribute of `.tag` components
+        cursor: text;
+        span.lit{
+          color: #8e908c !important;
+        }
+    }
+
     pre,
-    .gutter,
     .code,
     .tag {
         background-color: inherit;
