@@ -112,14 +112,34 @@ menu:
   #   directory: atom.xml
   #   icon: fa-location-arrow
 
-widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, recent_comments and links.
+widgets: ## Eight widgets in sidebar provided: search, category, tag, recent_posts, recent_comments and links.
   - search
+  - detailInfo 
   - category
   - tag
   # - recent_posts
   # - recent_comments
   # - links
   - toc
+
+widgetinfo:
+  avatar: /img/cong_icon.jpg #也可以用图床链接套个url()
+  discription: 沉舟侧畔千帆过
+  outlinkitem:
+    - name: twitter
+      outlink: https://twitter.com/username
+      message: Twitter
+    - name: envelope
+      outlink: mailto:cc7722@foxmail.com
+      message: Email
+    - name: github
+      outlink: https://github.com/ThisisWyatt
+      message: Github
+    # - name: rss
+    #   outlink: atom.xml
+    #   message: RSS
+
+
 
 links:
   - title: L金盆
