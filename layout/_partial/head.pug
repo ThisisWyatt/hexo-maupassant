@@ -19,7 +19,7 @@ head
   if config.feed
     link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
   if theme.google_analytics
-    script(src='https://www.googletagmanager.com/gtag/js?id=' + theme.google_analytics, async)
+    //- script(src='https://www.googletagmanager.com/gtag/js?id=' + theme.google_analytics, async)
     script.
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
