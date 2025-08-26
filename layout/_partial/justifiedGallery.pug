@@ -1,0 +1,17 @@
+if theme.albums && page.albums && page.albums.length
+  link(rel='stylesheet', href=url_for(theme.css) + '/justifiedGallery.css')
+  .justified-gallery#gallery
+    each photo in page.albums
+      div
+        a.fancybox(
+          data-fancybox="images"
+          data-caption!= photo[2]
+          href!= url_for(photo[0])
+          rel="gallery_#{page._id}"
+          title!= photo[2]
+        )
+          img(
+            src!= url_for(photo[1])
+            itemprop="image"
+            alt!= photo[2]
+          )
